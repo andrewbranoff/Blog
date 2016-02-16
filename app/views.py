@@ -30,7 +30,7 @@ def edit (id):
 		return  redirect(url_for('index'))
     return render_template('edit.html', post=post)
 
-#Deletge
+#Delete
 @app.route('/delete/<id>' , methods=['POST', 'GET'])
 def delete (id):
     post = Post.query.get(id)
